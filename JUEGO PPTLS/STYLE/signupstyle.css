@@ -1,0 +1,95 @@
+#divRegistroUsuario {
+    margin-bottom: 10px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #56877d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+}
+
+#divRegistroUsuario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#divNombreRegistro,
+#divCorreoRegistro,
+#divContraseñaRegistro {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#divNombreRegistro label,
+#divCorreoRegistro label,
+#divContraseñaRegistro label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#divNombreRegistro input,
+#divCorreoRegistro input,
+#divContraseñaRegistro input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#divNombreRegistro input:focus,
+#divCorreoRegistro input:focus,
+#divContraseñaRegistro input:focus {
+    border-color: #65b8a6;
+    outline: none;
+}
+
+#botonRegistro {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #65b8a6;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#botonRegistro:hover {
+    background-color: #2d6073;
+}
+
+#divRegistroUsuario h4 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+#divRegistroUsuario a {
+    text-decoration: none;
+    color: #65b8a6;
+    font-weight: bold;
+}
+
+#divRegistroUsuario a:hover {
+    color: #2d6073;
+}
+
+#divRegistroUsuario.active {
+    display: flex;
+}

@@ -1,0 +1,103 @@
+body {
+    background-color: #a3ab98;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#divInicioSesion {
+    margin-bottom: 10px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #56877d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+}
+
+#divInicioSesion h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#divCorreoSesion,
+#divContraseñaSesion {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#divCorreoSesion label,
+#divContraseñaSesion label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#divCorreoSesion input,
+#divContraseñaSesion input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#divCorreoSesion input:focus,
+#divContraseñaSesion input:focus {
+    border-color: #65b8a6;
+    outline: none;
+}
+
+#botonIniciarSesion {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #65b8a6;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#botonIniciarSesion:hover {
+    background-color: #2d6073;
+}
+
+#divInicioSesion h4 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+#divInicioSesion a {
+    text-decoration: none;
+    color: #65b8a6;
+    font-weight: bold;
+}
+
+#divInicioSesion a:hover {
+    color: #2d6073;
+}
+
+#divInicioSesion.active {
+    display: flex;
+}
