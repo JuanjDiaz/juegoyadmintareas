@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="../STYLE/loginstyle.css">
+    <link rel="stylesheet" href="../STYLE/signupstyle.css">
+    <link rel="stylesheet" href="../STYLE/gamestyle.css">
+</head>
+<body>
+    <div id="divInicioSesion" class="active">
+        <h2>Inicio de sesión</h2>
+        <div id="divCorreoSesion">
+            <label>Correo Electrónico</label>
+            <input type="text" id="inputCorreoSesion">
+        </div>
+        <div id="divContraseñaSesion">
+            <label>Contraseña</label>
+            <input type="text" id="inputContraseñaSesion">
+        </div>
+        <button id="botonIniciarSesion">Inicio Sesión</button>
+        <h4>No tienes cuenta? <a href="#" id="linkRegistro">Registrate aquí</a></h4>
+    </div>
+
+    <div id="divRegistroUsuario">
+        <h2>Registro de Usuario</h2>
+        <div id="divNombreRegistro">
+            <label>Nombre</label>
+            <input type="text" id="inputNombreRegistro">
+        </div>
+        <div id="divCorreoRegistro">
+            <label>Correo Electrónico </label>
+            <input type="text" id="inputCorreoRegistro">
+        </div>
+        <div id="divContraseñaRegistro">
+            <label>Contraseña</label>
+            <input type="text" id="inputContraseñaRegistro">
+        </div>
+        <button id="botonRegistro">Registrar</button>
+        <h4>Ya tienes cuenta? <a href="#" id="linkIniciarSesion">Inicia sesion aquí</a></h4>
+    </div>
+
+    <div id="divJuego">
+        <h1>PIEDRA, PAPEL, TIJERA, LAGATO O SPOCK</h1>
+        <br>
+        <p>Selecciona tu ataque</p>
+        <br>
+        <button id="botonPiedra">Piedra👊</button>
+        <button id="botonPapel">Papel🖐️</button>
+        <button id="botonTijera">Tijera✌️</button>
+        <button id="botonLagarto">Lagarto🫳</button>
+        <button id="botonSpock">Spock🖖</button>
+        <div id="divResultado">
+
+        </div>
+    </div>
+
+    <script src="../JS/login.js"></script>
+    <script src="../JS/signup.js"></script>
+    <script src="../JS/game.js"></script>
+</body>
+</html>

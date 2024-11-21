@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <div id="contenedorPrincipal">
+        
+        <div class="contenedor" id="contenedor1">
+            <h2>Administrador de tareas</h2>
+            <p class="parrafo">Ingresa una tarea:</p>
+            <input type="text" id="tareaIngresada">
+            <label>
+                <input type="checkbox" class="selector" id="selectorAlta" onclick="seleccionarUnico(this.id)">Prioridad alta
+            </label>
+            <label>
+                <input type="checkbox" class="selector" id="selectorBaja" onclick="seleccionarUnico(this.id)"">Prioridad baja
+            </label>
+            <div id="contenedor-boton">
+                <br>
+                <button onclick="guardarTarea()" class="boton">Guardar</button>
+            </div>
+        </div>
+        
+        <div class="contenedoresInferiores">
+            
+            <div class="contenedor" id="contenedor2">
+                <h2>Tareas de alta prioridad</h2>
+                <div class="contenedorInterno" id="contenedorAlta">
+                    
+                </div>
+            </div>
+            
+            <div class="contenedor" id="contenedor3">
+                <h2>Tareas de baja prioridad</h2>
+                <div class="contenedorInterno" id="contenedorBaja">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="adminTareas.js"></script>
+</body>
+</html>
